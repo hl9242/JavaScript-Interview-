@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Closer-JavaScript</title>
+  </head>
+  <body>
+    <div id="change-size">
+      <p>Some paragraph text</p>
+      <h1>some heading 1 text</h1>
+      <h2>some heading 2 text</h2>
+    </div>
+    <button id="size-12">12</button>
+    <script>
+      let btn = document.getElementById("size-12");
+      let divblock = document.getElementById("change-size");
+      function makeSizer(size) {
+        return function () {
+          // document.body.style.fontSize = size + 'px';
+          divblock.style.fontSize = `${size}px`;
+        };
+      }
+      var size12 = makeSizer(25);
+      var size15 = makeSizer(5);
+      var size75= makeSizer(75);
+      btn.addEventListener("click", size15);
+    </script>
+  </body>
+</html>
