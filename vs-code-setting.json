@@ -1,0 +1,22 @@
+{
+  "tabnine.experimentalAutoImports": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.guides.bracketPairs": true
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "explorer.confirmDelete": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.autoSave": "afterDelay",
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorTheme": "Monokai",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.matchBrackets": "always"
+}
